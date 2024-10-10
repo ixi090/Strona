@@ -1,0 +1,359 @@
+<html lang="en">
+<head>
+  <title>____</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+        .image-background {
+            background-image: url('https://www.empressia.pl/blog/images/2021-07/pozycjonowanie-restauracji.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 500px;
+            width: 100%;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            color: white; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+
+
+</style>
+<script>
+    function showAlert() {
+         alert("Brak wolnych miejsc!");
+         alert("Zapraszamy do sekcji rezerwacja aby dostosować dzień");
+     }
+</script>
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Restauracja "Bez Nazwy"</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#onas">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rezerwacja">Rezerwacja <span class="badge bg-danger">0</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#opinie">Opinie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="image-background d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center">
+            <h5>Restauracja</h5>
+            <h1>Bez Nazwy</h1>
+        <button class="btn btn-dark mt-3 me-5" onclick="showAlert()">Znajdz stolik</button>
+        </div>
+    </div>
+    <div class="container mt-5" id="onas"></div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">O nas</h2>
+        <p class="text-center">
+            Witamy w restauracji "Bez Nazwy", miejscu, gdzie tradycja spotyka się z nowoczesnością. Nasza kuchnia to połączenie 
+            świeżych, lokalnych składników z pasją do gotowania. Każde danie przygotowujemy z myślą o satysfakcji naszych gości.
+            Zapraszamy do odkrywania smaków, które zachwycają zarówno podniebienie, jak i zmysły!. 
+            Jedną z naszych specjalności jest rezerwacja stolików tylko ten sam dzień. Nie moszna rezerwować stolików na inne terminy
+        </p>
+    </div>
+    <div class="container mt-5" id="menu">
+        <H5 class="text-left">Menu</H5>
+        <h2 class="text-center mb-4">Oto kilka propozycji z naszego menu</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="img-container">
+                        <img src="https://www.szef-kuchni.com.pl/assets/media/felietony/czekadelko_felieton.jpg" class="card-img-top" alt="Przystawka">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Przystawka</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Grzanka z pomidorami, bazylią i oliwą</li>
+                            <li class="list-group-item">Chrupiące krewetki podane z sosem czosnkowym</li>
+                            <li class="list-group-item">Surowa wołowina z dodatkiem żółtka, cebuli i marynowanych ogórków</li>
+                            <li class="list-group-item">Sałatka z mozzarelli, pomidorów, bazylii i oliwy z oliwek</li>
+                            <li class="list-group-item">Podany na chrupiącym pieczywie z żurawiną</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="img-container">
+                        <img src="https://pointofdesign.pl/wp-content/uploads/73-1024x560.jpg" class="card-img-top" alt="Danie główne">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Danie główne</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Aromatyczna kaczka podawana z kluskami śląskimi i czerwoną kapustą</li>
+                            <li class="list-group-item">Kremowe risotto z borowikami, parmezanem i świeżymi ziołami</li>
+                            <li class="list-group-item">soczysta polędwica podana z puree ziemniaczanym i warzywami</li>
+                            <li class="list-group-item">Grillowany łosoś podany z ryżem i warzywami</li>
+                            <li class="list-group-item">Gromatyczne danie z kurczakiem, mlekiem kokosowym i przyprawami, podane z ryżem basmati</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="img-container">
+                        <img src="https://sklep.ashanti.pl/img/2932/szkolenie-cukiernicze-desery-restauracyjne" class="card-img-top" alt="Deser">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Deser</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Włoski deser z mascarpone, biszkoptami nasączonymi kawą i kakao</li>
+                            <li class="list-group-item">Aksamitny krem z chrupiącą, karmelizowaną skorupką</li>
+                            <li class="list-group-item">Ciasto jabłkowe podane z kulką lodów waniliowych</li>
+                            <li class="list-group-item">Ciastko z płynnym wnętrzem czekoladowym, podane z malinami</li>
+                            <li class="list-group-item">Delikatny włoski deser z wanilią, podany z sosem owocowym</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="rezerwacja"></div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Rezerwacja</h2>
+        <h3 class="text-center">
+            Ten oto pasek pokazuje wolne miejsca w naszej restauracji
+        </h3>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width:70%">
+              Standard
+            </div>
+            <div class="progress-bar bg-warning" style="width:20%">
+              Bużo ludziów
+            </div>
+            <div class="progress-bar bg-danger" style="width:10%">
+                Mass assault
+            </div>
+          </div>
+          <br>
+          <h3 class="text-center mb-4">Dziśiejszy dzień</h3>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:110%"></div>
+          </div>
+    </div>   
+
+    <div class="container mt-3" id="opinie">
+        <h3>Opinie</h3>
+        <p>Kliknij, jakie opinie chcesz zobaczyć:</p>
+    
+        <div class="row gy-3">
+            <div class="col-12 col-sm-6 col-md-4">
+                <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#Opinie1">
+                    Opinie 1 <span class="badge bg-secondary">0</span>
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#Opinie2">
+                    Opinie 2 <span class="badge bg-secondary">1</span>
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#Opinie3">
+                    Opinie 3 <span class="badge bg-secondary">2</span>
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <button type="button" class="btn btn-info w-100" data-bs-toggle="modal" data-bs-target="#Opinie4">
+                    Opinie 4 <span class="badge bg-secondary">3</span>
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#Opinie5">
+                    Opinie 5 <span class="badge bg-secondary">4</span>
+                </button>
+            </div>
+        </div>
+    </div>
+      
+
+      <div class="modal" id="Opinie1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+         
+            <div class="modal-header">
+              <h4 class="modal-title">Opinie 1</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            
+             <div class="modal-body">
+              Brak
+             </div>
+      
+            
+             <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="Opinie2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+             
+                <div class="modal-header">
+                  <h4 class="modal-title">Opinie 2</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                
+                 <div class="modal-body">
+                    Lokalizacja i atmosfera były w porządku, ale jedzenie nie spełniło oczekiwań. Stek był przegotowany, a czas oczekiwania na danie zbyt długi. Obsługa była miła, ale ogólnie nie jestem zadowolony z wizyty.
+                 </div>
+          
+                
+                 <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+    
+                </div>
+    </div>
+        </div>
+        <div class="modal" id="Opinie3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+             
+                <div class="modal-header">
+                  <h4 class="modal-title">Opinie 3</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                
+                 <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Restauracja ma przyjemną atmosferę, a obsługa była miła i pomocna. Zamówiłem makaron, który był smaczny, ale nieco zbyt słony. Czas oczekiwania na danie był w normie, ale brakowało mi większej różnorodności w menu. Mimo to, to miejsce ma potencjał. Z przyjemnością wrócę, aby spróbować innych dań.
+                        </li>
+                        <li class="list-group-item">Restauracja ma ładny wystrój i miłą atmosferę. Zamówiłem pizzę, która była smaczna, ale ciasto mogłoby być bardziej chrupiące. Obsługa była przyjazna, ale musieliśmy czekać trochę dłużej na nasze zamówienie. W sumie to przyjemne miejsce na niezobowiązujący obiad, ale liczę na poprawę w przyszłości.</li>
+                    </ul>
+                 </div>
+          
+                
+                 <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="Opinie4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+             
+                <div class="modal-header">
+                  <h4 class="modal-title">Opinie 4</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                
+                 <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Restauracja ma przyjemny wystrój i bardzo miłą obsługę. Zamówiłem sałatkę z grillowanym kurczakiem, która była świeża i smaczna. Jedynym minusem było to, że danie mogłoby być większe. Czas oczekiwania na jedzenie był krótki, co na pewno skłoni mnie do powrotu!</li>
+                        <li class="list-group-item">Miałem przyjemność zjeść obiad w tej restauracji i muszę przyznać, że jedzenie było naprawdę dobre! Spróbowałem makaronu z owocami morza i był znakomity. Obsługa była uprzejma, ale czasem zdarzało się, że musiałem długo czekać na napoje. Mimo to, wrócę, aby spróbować innych dań z menu.</li>
+                        <li class="list-group-item">W restauracji panuje miła atmosfera, a jedzenie było bardzo smaczne. Zamówiłem pizzę, która była chrupiąca i dobrze doprawiona. Obsługa była szybka, ale zdarzyło się, że kelner zapomniał o jednym z zamówień. To niewielki problem w porównaniu do całościowego doświadczenia, które było na plus. Na pewno wrócę, aby wypróbować inne pozycje w menu!</li>
+                    </ul>
+                 </div>
+          
+                
+                 <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="Opinie5">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+             
+                <div class="modal-header">
+                  <h4 class="modal-title">Opinie 5</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                
+                 <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Zdecydowanie najlepsza restauracja, w jakiej byłem! Zamówiłem degustacyjne menu, które było absolutnie przepyszne. Każde danie było starannie przygotowane i pięknie podane. Obsługa była niesamowicie profesjonalna i przyjazna, a atmosfera w lokalu sprawiała, że czułem się wyjątkowo. Z przyjemnością wrócę!</li>
+                        <li class="list-group-item">Miałem przyjemność spędzić wieczór w tej restauracji z rodziną i muszę przyznać, że było to niezapomniane doświadczenie. Jedzenie było wyjątkowe – spróbowałem dania z krewetkami, które były idealnie przyprawione. Kelnerzy byli pomocni i zawsze gotowi odpowiedzieć na nasze pytania. Atmosfera była bardzo przytulna. Na pewno tu wrócę!</li>
+                        <li class="list-group-item">To idealne miejsce na romantyczną kolację. Restauracja ma wspaniały wystrój, a oświetlenie tworzy intymną atmosferę. Zamówiłem stek, który był doskonale przygotowany i miał wyjątkowy smak. Obsługa była znakomita – dbali o nasz komfort przez cały czas. Zdecydowanie polecam każdemu!</li>
+                        <li class="list-group-item">Ta restauracja serwuje najlepszą pizzę, jaką kiedykolwiek jadłem! Ciasto było idealnie chrupiące, a składniki świeże i aromatyczne. Obsługa była szybka i bardzo uprzejma. Miałem również przyjemność spróbować ich deseru – tiramisu, które było po prostu nieziemskie. To miejsce z pewnością zasługuje na pięć gwiazdek!</li>
+                    </ul>
+                 </div>
+          
+                
+                 <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+    
+                </div>
+
+            </div>
+        </div>
+            <div class="container mt-5" id="galeria">
+                <h2 class="text-center mb-4">Galeria</h2>
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    </div>
+        
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://media.istockphoto.com/id/1502384708/pl/zdj%C4%99cie/r%C4%99ka-m%C5%82odego-szefa-kuchni-nak%C5%82adaj%C4%85cego-aromatyczne-zio%C5%82o-na-pieczone-mi%C4%99so.jpg?s=1024x1024&w=is&k=20&c=SB-AQ4TJEl2GadpFxrhJZQEMFJW45RaDB6Iw8UbchSw=" class="d-block w-100" alt="Plating">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://media.istockphoto.com/id/1081422898/pl/zdj%C4%99cie/pan-sma%C5%BCone-kaczki.jpg?s=1024x1024&w=is&k=20&c=R3_AR2_3XMld_Fj6LohIVCOCjK7lt-I_LSKVhSFn1jQ=" class="d-block w-100" alt="Fotografia kulinarna">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_1280.jpg" class="d-block w-100" alt="Zdjęcie potrawy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg" class="d-block w-100" alt="Potrawa 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2015/09/14/11/43/restaurant-939435_1280.jpg" class="d-block w-100" alt="Kuchnia włoska">
+                        </div>
+                    </div>
+        
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Poprzedni</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Następny</span>
+                    </button>
+                </div>
+            </div>
+        
+        
+    
+    </body>
