@@ -19,15 +19,12 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
+        .footer {
+      background-color: lightgray; 
+    }
 
 
 </style>
-<script>
-    function showAlert() {
-         alert("Brak wolnych miejsc!");
-         alert("Zapraszamy do sekcji rezerwacja aby dostosować dzień");
-     }
-</script>
 </head> 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -52,18 +49,26 @@
         <div class="text-center">
             <h5>Restauracja</h5>
             <h1>Bez Nazwy</h1>
-        <button class="btn btn-dark mt-3 me-5" onclick="showAlert()">Znajdz stolik</button>
         </div>
     </div>
-    <div class="container mt-5" id="onas"></div>
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">O nas</h2>
-        <p class="text-center">
-            Witamy w restauracji "Bez Nazwy", miejscu, gdzie tradycja spotyka się z nowoczesnością. Nasza kuchnia to połączenie 
-            świeżych, lokalnych składników z pasją do gotowania. Każde danie przygotowujemy z myślą o satysfakcji naszych gości.
-            Zapraszamy do odkrywania smaków, które zachwycają zarówno podniebienie, jak i zmysły!. 
-            Jedną z naszych specjalności jest rezerwacja stolików tylko ten sam dzień. Nie moszna rezerwować stolików na inne terminy
-        </p>
+    <div class="container mt-5" id="onas">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">O nas</h2>
+                <p>
+                    Witamy w restauracji "Bez Nazwy", miejscu, gdzie tradycja spotyka się z nowoczesnością. Nasza kuchnia to połączenie 
+                    świeżych, lokalnych składników z pasją do gotowania. Każde danie przygotowujemy z myślą o satysfakcji naszych gości. 
+                    Zapraszamy do odkrywania smaków, które zachwycają zarówno podniebienie, jak i zmysły! 
+                    
+                </p>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6cfEGWRlKtcVImfhi5W3b58w00VUob2oMTw&s" alt="Szef" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+        
     </div>
     <div class="container mt-5" id="menu">
         <H5 class="text-left">Menu</H5>
@@ -125,28 +130,34 @@
 
     <div class="container mt-5" id="rezerwacja"></div>
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Rezerwacja</h2>
-        <h3 class="text-center">
-            Ten oto pasek pokazuje wolne miejsca w naszej restauracji
-        </h3>
-        <div class="progress">
-            <div class="progress-bar bg-success" style="width:70%">
-              Standard
-            </div>
-            <div class="progress-bar bg-warning" style="width:20%">
-              Bużo ludziów
-            </div>
-            <div class="progress-bar bg-danger" style="width:10%">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Rezerwacja</h2>
+            <h3 class="text-center">
+                Ten oto pasek pokazuje wolne miejsca w naszej restauracji
+            </h3>
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width:70%">
+                  Standard
+                </div>
+                <div class="progress-bar bg-warning" style="width:20%">
+                  Dużo ludzi
+                </div>
+                <div class="progress-bar bg-danger" style="width:10%">
                 Mass assault
+                </div>
             </div>
-          </div>
-          <br>
-          <h3 class="text-center mb-4">Dzisiejszy dzień</h3>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:110%"></div>
-          </div>
-    </div>   
-
+            <br>
+            <h3 class="text-center mb-4">Dzisiejszy dzień</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:110%"></div>
+            </div>
+            
+       
+            <div class="text-center mt-4">
+                <button class="btn btn-danger">Zbyt dużo rezerwacji</button>
+        </div>
+        </div>
+        
     <div class="container mt-3" id="opinie">
         <h3>Opinie</h3>
         <p>Kliknij, jakie opinie chcesz zobaczyć:</p>
@@ -333,9 +344,6 @@
                             <img src="https://media.istockphoto.com/id/1081422898/pl/zdj%C4%99cie/pan-sma%C5%BCone-kaczki.jpg?s=1024x1024&w=is&k=20&c=R3_AR2_3XMld_Fj6LohIVCOCjK7lt-I_LSKVhSFn1jQ=" class="d-block w-100" alt="Fotografia kulinarna">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_1280.jpg" class="d-block w-100" alt="Zdjęcie potrawy">
-                        </div>
-                        <div class="carousel-item">
                             <img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg" class="d-block w-100" alt="Potrawa 2">
                         </div>
                         <div class="carousel-item">
@@ -353,7 +361,33 @@
                     </button>
                 </div>
             </div>
-        
-        
-    
+            <div class="container mt-5" id="kontakt"></div>
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Kontakt</h2>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo3">
+                    Kontakt
+                  </button>
+                <div class="offcanvas offcanvas-start" id="demo3">
+                    <div class="offcanvas-header">
+                      <h1 class="offcanvas-title">Restauracja 
+                        <br>Bez nazwy</h1>
+                      <button type="button" class="btn btn-dark mt-3 me-5" data-bs-dismiss="offcanvas" ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <p>Numer telefonu: 873 826 037</p>
+                      <p>Miasto: Białystok Ulica Biznesowa 13</p>
+                      <p>Mail: BezNazwy13@gmail.com</p>
+                      
+                     
+                  </div>
+                </div>
+            </div>
+    </div>
+            <br>
+            <footer class="footer text-center py-3" id="kontakt"> 
+                <p>© 2024 Bez nazwy</p>
+                <p>Igor Parszewski</p>
+              </footer>
+                
     </body>
